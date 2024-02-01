@@ -11,7 +11,7 @@ with Webcam(fps=0.5) as webcam:
         frame.resize(width=512) 
         frame.run_predict(predictor=predictor) 
         frame.overlay_predictions()
-        print("------ Frame Captured ------")
+        print("------  Frame Captured  ------")
 
         # Check for car in preddictions
         if "Vehicle" in frame.predictions:
